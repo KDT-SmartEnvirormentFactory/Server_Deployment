@@ -146,8 +146,24 @@ docker ps
 
 
 
-
-
+[일기]
+서버 구축 완료 / EMQX로 MQTT 통신 완료 / Node-RED로 시각화 완료, 브로커 연결해서 데이터 가져오기 성공
+그래서 작업 환경 여는 방법
+```bash
+ssh -i "C:\Users\hooni\Downloads\emqx-key.pem" ubuntu@13.239.5.195
+```
+일단 위와 같이 서버를 연다.
+그리고 이건 EMQX 서버
+```bash
+http://13.239.5.195:18083/#/dashboard/overview
+```
+이건 Node-RED 서버
+```bash
+http://13.239.5.195:1880/#flow/f6f2187d.f17ca8
+```
+ESP32에 다가 코드는 올렸으니, 핫스팟만 키면 작동으로 붙을 거임.
+그래서 일단 핫스팟 키고 붙으면 node-red로 IR 신호 가는지 확인하셈
+그 뒤로 대쉬보드(앱) 만들고, DB로 저장하는 거 까지 하면 될 듯
 
 
 
